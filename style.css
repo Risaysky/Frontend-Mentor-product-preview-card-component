@@ -21,7 +21,7 @@
 body {
     margin: 0;
     background-color: var(--cream);
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     color: var(--grey);
 }
@@ -57,7 +57,7 @@ img {
 }
 
 .title {
-    font-family: Fraunces;
+    font-family: Fraunces, serif;
     font-weight: 700;
     color: var(--black);
     line-height: 1;
@@ -76,7 +76,7 @@ img {
 }
 
 .current-price {
-    font-family: Fraunces;
+    font-family: Fraunces, serif;
     font-weight: 700;
     color: var(--green-500);
     font-size: 2rem;
@@ -90,7 +90,7 @@ img {
 
 .btn {
     font-weight: 700;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color: var(--white);
     background-color: var(--green-500);
     border: none;
@@ -107,7 +107,7 @@ img {
     cursor: pointer;
 }
 
-@media (min-width:650px) {
+@media (min-width:40.625rem) {
     main {
         block-size: 100vh;
     }
