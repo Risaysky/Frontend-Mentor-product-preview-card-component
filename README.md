@@ -15,5 +15,5 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Links
 
-- [Solution page]()
-- [Live site]()
+- [Solution page](https://www.frontendmentor.io/solutions/flex-product-preview-card-component-NGzkPg6aeS)
+- [Live site](https://risaysky.github.io/Frontend-Mentor-product-preview-card-component/)
