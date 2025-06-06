@@ -1,0 +1,132 @@
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+.flex {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    font-family: Montserrat;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
+.wrapper {
+    flex-direction: column;
+    max-inline-size: 400px;
+    border-radius: 12px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.text {
+    padding: 1.5rem;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-size: .75rem;
+    margin: 0;
+}
+
+.title {
+    font-family: Fraunces;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1;
+    margin-block: 1rem;
+}
+
+.description {
+    font-size: .875rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.price {
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.current-price {
+    font-family: Fraunces;
+    font-weight: 700;
+    color: var(--green-500);
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: .875rem;
+}
+
+.btn {
+    font-weight: 700;
+    font-family: Montserrat;
+    color: var(--white);
+    background-color: var(--green-500);
+    border: none;
+    inline-size: 100%;
+    justify-content: center;
+    gap: .75rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: var(--green-700);
+    cursor: pointer;
+}
+
+@media (min-width:650px) {
+    main {
+        block-size: 100vh;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        max-inline-size: 600px;
+    }
+
+    .product-img,
+    .text {
+        inline-size: 300px;
+    }
+
+    .text {
+        padding: 2rem;
+    }
+
+    .current-price {
+        margin-block: 1.5rem;
+    }
+}
