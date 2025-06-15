@@ -109,7 +109,7 @@ img {
 
 @media (min-width:40.625rem) {
     main {
-        block-size: 100vh;
+        min-block-size: 100vh;
     }
 
     .wrapper {
